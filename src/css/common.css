@@ -42,41 +42,6 @@ img {
   display: flex;
   gap: 50px;
 }
-.alert{
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  width: 350px;
-
-  background-color: #f54242;
-  border-radius: 5px;
-  padding: 15px 10px;
-  color: #FFF;
-  opacity: 0;
-  transition: opacity 250ms linear;
-}
-.alert.isOpen{
-  opacity: 1;
-}
-.alert__text{
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-}
-.alert__text::before{
-  content: "";
-  background-image: url('../img/close-ico.svg');
-  display: block;
-  fill: #FFF;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  border: 2px solid #FFF;
-
-  margin-right: 10px;
-}
 .timer{
   display: flex;
   gap: 20px;
