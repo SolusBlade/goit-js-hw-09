@@ -14,7 +14,7 @@ function onSubmit(e) {
   const AMOUNT = Number(amountRef.value);
   let stepCounter = DELAY;
 
-  for(i=1; i <= AMOUNT; i++){
+  for(let i=1; i <= AMOUNT; i++){
     createPromise(i, stepCounter)
     .then(({ position, delay }) => {
       onSucces(position, delay);
