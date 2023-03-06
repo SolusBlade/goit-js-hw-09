@@ -41,7 +41,7 @@ function createPromise(position, delay) {
   })
 }
 function onSucces(position, delay){
-  Notiflix.Notify.failure(`✅ Fulfilled promise ${position} in ${delay}ms`,
+  Notiflix.Notify.success(`✅ Fulfilled promise ${position} in ${delay}ms`,
           {
             timeout: 1000,
           });
@@ -52,6 +52,3 @@ function onError(position, delay){
             timeout: 1000,
           });
 }
-
-
-
